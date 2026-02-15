@@ -61,7 +61,7 @@ async def main():
         await page.type("textarea.xterm-helper-textarea", comando, delay=40, timeout=60000)
         await page.keyboard.press("Enter")
         print("Comando digitado com sucesso!")
-        await page.wait_for_timeout(20000)
+        await page.wait_for_timeout(30000)
         await page.screenshot(path="screen.png", full_page=True)
 
         # lines = await page.locator(".xterm-rows > div").all_text_contents()
